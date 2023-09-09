@@ -7,30 +7,165 @@
     overflow: hidden;
     background-image: url('https://i.redd.it/ehhvzjdx1s091.jpg');
     background-size: 110%;
-    background-position: center 10%;
-}
-
-.weather-app {
+    background-position: center 75%;
+  }
+  
+  .weather-app {
     padding: 20px;
     color: white;
     font-family: 'Helvetica Neue', sans-serif;
     text-align: center;
-}
-
-.location-name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center; 
+    flex-direction: column; 
+  }
+  
+  .location-name {
     font-size: 24px;
-    margin-bottom: 2px;
+    margin-top: 70px;
+    margin-bottom: 0px; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.current-temp {
-    font-size: 48px;
-    margin-bottom: 2px;
+  }
+  
+  .current-temp {
+    font-size: 64px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
-
-.weather-condition {
-    font-size: 18px;
-    margin-bottom: 2px;
+  }
+  
+  .real-feel {
+    font-size: 32px;
+    margin-top: 0px; 
+    margin-bottom: 0px; 
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-}
+  }
+  
+  .weather-condition {
+    font-size: 16px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .edit-button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 20px; 
+      background-color: #FFFFFF; 
+      color: #787878; 
+      font-size: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; 
+  }
+  
+  .edit-button:hover {
+      background-color: #F2F2F2; 
+  }
+  
+  #edit-button {
+      position: absolute;
+      top: 80px;
+      left: 153px;
+  }
+  
+  #done-button {
+      position: absolute;
+      top: 80px;
+      left: 400px;
+  }
+  
+  .widget-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 5px;
+  }
+  
+  .icon-text-container {
+      display: flex;
+      align-items: center;
+  }
+  
+  .stacked-text-container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; 
+  }
+  
+  
+  .widget-title {
+      color: white;
+      font-size: 10px;
+      font-weight: bold;
+      margin-left: 1px;
+  }
+  
+  .widget-text1 {
+      color: white;
+      font-size: 10px;
+      margin-left: 1px;
+  }
+  
+  .widget-text {
+      color: white;
+      margin-top: 1px;
+      font-size: 10px;
+      margin-bottom: 3px;
+  
+  }
+  
+  .widget-large {
+      color: white;
+      font-size: 18px;
+  }
+  
+  .widget-icon {
+      width: 12px;
+      height: 12px;
+      margin-bottom: 1px;
+  }
+  
+  .widget-pic {
+      width: 260px;
+      height: 90px;
+      margin-bottom: 1px;
+  }
+  .title-icon {
+      width: 12px; 
+      height: 12px; 
+      margin-right: 5px; 
+  }
+  
+  .widget-line {
+      height: 1px;
+      background-color: white;
+      margin-top: 1px;
+      margin-bottom: 5px;
+  }
+  
+  .long-widget {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 5px;
+  }
+  
+  .small-widgets-container {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+  
+  .small-widget {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 10px;
+      width: calc(50% - 5px); 
+      box-sizing: border-box;
+      margin-bottom: 10px;
+  }
